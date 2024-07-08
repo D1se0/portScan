@@ -4,7 +4,7 @@
   <img src="https://github.com/D1se0/portScan/assets/164921056/9c78824a-af22-4377-ad6f-774c122f5410" alt="Directorybrute" width="400">
 </p>
 
-## Descripción
+## Description
 
 `portScan` is a port scanning tool written in `Python`, designed for network auditing and ethical hacking. It allows you to scan open, closed and filtered ports on an `IP` or a range of `IPs`, providing detailed information about the services running on the open ports.
 
