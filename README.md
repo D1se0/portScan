@@ -64,9 +64,9 @@ La herramienta `portScan` ofrece varias opciones y parámetros para el escaneo d
     ```
 ### Example:
 
-    ```bash
+```bash
     python3 portScan.py -s 10.10.11.0/24 --only-open
-    ```
+```
 
 3. **Mostrar todos los puertos con detalles completos**:
     ```bash
