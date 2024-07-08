@@ -1,0 +1,7 @@
+# Para que el script funcione perfectamente instalaremos los requisitos de la siguiente manera y como root...
+
+$ ./requirements.sh
+
+# Una vez instalado los requisitos iniciaremos la herramienta para ver que funciona correctamente...
+
+$ portScan -h
