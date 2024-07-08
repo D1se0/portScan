@@ -6,62 +6,62 @@
 
 ## Descripción
 
-`portScan` es una herramienta de escaneo de puertos escrita en `Python`, diseñada para la auditoría de redes y el hacking ético. Permite escanear puertos abiertos, cerrados y filtrados en una `IP` o un rango de `IPs`, proporcionando información detallada sobre los servicios que se ejecutan en los puertos abiertos.
+`portScan` is a port scanning tool written in `Python`, designed for network auditing and ethical hacking. It allows you to scan open, closed and filtered ports on an `IP` or a range of `IPs`, providing detailed information about the services running on the open ports.
 
-## Características
+## Characteristics
 
-- Escaneo de puertos en una `IP` específica.
-- Escaneo de puertos en un rango de `IPs` especificado en notación `CIDR`.
-- Muestra solo puertos abiertos con detalles breves.
-- Muestra todos los puertos con detalles completos utilizando `nmap`.
-- Exporta los resultados del escaneo a un archivo `.txt`.
-- Interrupción del escaneo con Ctrl+C mostrando un mensaje de salida.
+- Port scanning on a specific `IP`.
+- Port scanning in a range of `IPs` specified in `CIDR` notation.
+- Shows only open ports with brief details.
+- Show all ports with full details using `nmap`.
+- Export scan results to a `.txt` file.
+- Interrupt the scan with Ctrl+C showing an output message.
 
-## Requisitos
+## Requirements
 
 - Python 3.x
 - `termcolor`
 - `scapy`
 - `nmap`
 
-## Instalación
+## Install
 
-1. **Clonar el repositorio**:
+1. **Clone the repository**:
 
     ```bash
     git clone https://github.com/D1se0/portScan.git
-    cd portScan
+    cd port scan
     ```
 
-3. **Ejecutar el script de instalación**:
+3. **Run the installation script**:
 
     ```bash
     ./requirements.sh
     ```
 
-## Uso
+## Use
 
-La herramienta `portScan` ofrece varias opciones y parámetros para el escaneo de puertos. A continuación se detallan los parámetros y ejemplos de uso.
+The `portScan` tool offers several options and parameters for port scanning. The parameters and usage examples are detailed below.
 
-### Parámetros
+### Parameters
 
-- `-i`, `--ip`: Dirección IP única a escanear.
-- `-s`, `--subnet`: Notación CIDR para escanear un rango de IPs (por ejemplo, `10.10.11.0/24`).
-- `--only-open`: Muestra solo los puertos abiertos con detalles breves.
+- `-i`, `--ip`: Unique IP address to scan.
+- `-s`, `--subnet`: CIDR notation to scan a range of IPs (e.g. `10.10.11.0/24`).
+- `--only-open`: Show only open ports with brief details.
 
-- `--only-filtered`: Muestra solo los puertos filtrados.
-- `--all`: Muestra todos los puertos abiertos con información detallada utilizando `nmap`.
-- `--export <archivo>`: Exporta los resultados del escaneo a un archivo `.txt`.
+- `--only-filtered`: Show only filtered ports.
+- `--all`: Show all open ports with detailed information using `nmap`.
+- `--export <file>`: Export the scan results to a `.txt` file.
 
-### Ejemplos de uso
+### Examples of use
 
-1. **Escaneo de puertos en una IP específica**:
+1. **Port scanning on a specific IP**:
 
     ```bash
     python3 portScan.py -i <IP> --only-open
     ```
 
-3. **Escaneo de un rango de IPs**:
+3. **Scanning a range of IPs**:
 
     ```bash
     python3 portScan.py -s <IP>/24 --only-open
@@ -73,21 +73,21 @@ La herramienta `portScan` ofrece varias opciones y parámetros para el escaneo d
     python3 portScan.py -s 10.10.11.0/24 --only-open
     ```
 
-3. **Mostrar todos los puertos con detalles completos**:
+3. **Show all ports with full details**:
 
     ```bash
     python3 portScan.py -i <IP> --all
     ```
 
-5. **Exportar los resultados a un archivo**:
+5. **Export results to a file**:
 
     ```bash
     python3 portScan.py -i <IP> --all --export <FILE>.txt
     ```
 
-## Ejemplo de Salida
+## Output Example
 
-### Escaneo con `--only-open`
+### Scanning with `--only-open`
 
 ```plaintext
     ****************************************
@@ -113,7 +113,7 @@ Port 80 is open
 Scan completed in: 0:00:35.303330
 ```
 
-### Escaneo con `--all`
+### Scan with `--all`
 
 ```bash
     ****************************************
@@ -160,14 +160,14 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 Nmap done: 1 IP address (1 host up) scanned in 37.03 seconds
 ```
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Por favor, abre un issue o envía un `pull request` para mejorar esta herramienta.
+Contributions are welcome. Please open an issue or submit a pull request to improve this tool.
 
-## Licencia
+## License
 
-`portScan` está licenciado bajo la MIT License.
+`portScan` is licensed under the MIT License.
 
 ----
 
-¡Gracias por usar `portScan`!
+Thank you for using `portScan`!
