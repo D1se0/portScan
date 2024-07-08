@@ -1,6 +1,8 @@
 # portScan
 
-![portScan Logo](./logo.png)
+<p align="center">
+  <img src="https://github.com/D1se0/portScan/assets/164921056/9c78824a-af22-4377-ad6f-774c122f5410" alt="Directorybrute" width="400">
+</p>
 
 ## Descripción
 
