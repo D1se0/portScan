@@ -27,7 +27,7 @@
 1. **Clonar el repositorio**:
 
     ```bash
-    git clone https://github.com/tuusuario/portScan.git
+    git clone https://github.com/D1se0/portScan.git
     cd portScan
     ```
 
@@ -46,6 +46,7 @@ La herramienta `portScan` ofrece varias opciones y parámetros para el escaneo d
 - `-i`, `--ip`: Dirección IP única a escanear.
 - `-s`, `--subnet`: Notación CIDR para escanear un rango de IPs (por ejemplo, `10.10.11.0/24`).
 - `--only-open`: Muestra solo los puertos abiertos con detalles breves.
+
 - `--only-filtered`: Muestra solo los puertos filtrados.
 - `--all`: Muestra todos los puertos abiertos con información detallada utilizando `nmap`.
 - `--export <archivo>`: Exporta los resultados del escaneo a un archivo `.txt`.
