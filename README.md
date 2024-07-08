@@ -54,26 +54,31 @@ La herramienta `portScan` ofrece varias opciones y parámetros para el escaneo d
 ### Ejemplos de uso
 
 1. **Escaneo de puertos en una IP específica**:
+
     ```bash
     python3 portScan.py -i <IP> --only-open
     ```
 
-2. **Escaneo de un rango de IPs**:
+3. **Escaneo de un rango de IPs**:
+
     ```bash
     python3 portScan.py -s <IP>/24 --only-open
     ```
-### Example:
 
-```bash
+    ### Example:
+
+    ```bash
     python3 portScan.py -s 10.10.11.0/24 --only-open
-```
+    ```
 
 3. **Mostrar todos los puertos con detalles completos**:
+
     ```bash
     python3 portScan.py -i <IP> --all
     ```
 
-4. **Exportar los resultados a un archivo**:
+5. **Exportar los resultados a un archivo**:
+
     ```bash
     python3 portScan.py -i <IP> --all --export <FILE>.txt
     ```
